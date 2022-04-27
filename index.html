@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Challenge-3 Float Property</title>
+	<style type="text/css">
+		body{
+			margin: 0 auto;
+			width: 90%;
+			max-width: 1050px;
+			background-color: lightskyblue;
+		}
+
+		.container{
+			border: 3px solid rosybrown;
+			padding: 20px;
+			background-color: lightgreen;
+			margin: 15px;
+		}
+
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: gold;
+			padding: 10px;
+			margin: 15px;
+		}
+		.one,.three{
+			float: right;
+			/*shifts the image to the right and the text comes up assuming it to be normal flow*/
+		}
+
+		.two,.four{
+			float: left;
+			/*shifts the image to the left and the text comes up lefting it to be normal flow*/
+		}
+		.special{
+			padding: 20px;
+		}
+
+		.cleared{
+			clear: left;/*clear property helps in changing the document flow back to it's original state*/
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center; text-decoration: underline;">Challenge-3</h1>
+	<section class="container">
+		<img class="box one" src="https://i.pinimg.com/originals/98/c1/5b/98c15bf7d49d48c91a31b5561caa3367.png">
+		<p class="special">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatibus consectetur a, obcaecati voluptate necessitatibus illum sapiente repellendus maiores totam, tempore dolorum consequatur repudiandae accusantium magnam maxime ducimus culpa cum tenetur qui nisi! Reprehenderit recusandae aspernatur nemo, numquam consectetur, asperiores velit sequi sint tenetur, laudantium amet autem voluptatum illum praesentium.</p>
+	</section>
+	<section class="container">
+		<img class="box two" src="https://i.pinimg.com/originals/98/c1/5b/98c15bf7d49d48c91a31b5561caa3367.png">
+		<p class="special">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatibus consectetur a, obcaecati voluptate necessitatibus illum sapiente repellendus maiores totam, tempore dolorum consequatur repudiandae accusantium magnam maxime ducimus culpa cum tenetur qui nisi! Reprehenderit recusandae aspernatur nemo, numquam consectetur, asperiores velit sequi sint tenetur, laudantium amet autem voluptatum illum praesentium.</p>
+	</section>
+	<section class="container">
+		<img class="box three" src="https://i.pinimg.com/originals/98/c1/5b/98c15bf7d49d48c91a31b5561caa3367.png">
+		<p class="special">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatibus consectetur a, obcaecati voluptate necessitatibus illum sapiente repellendus maiores totam, tempore dolorum consequatur repudiandae accusantium magnam maxime ducimus culpa cum tenetur qui nisi! Reprehenderit recusandae aspernatur nemo, numquam consectetur, asperiores velit sequi sint tenetur, laudantium amet autem voluptatum illum praesentium.</p>
+	</section>
+	<section class="container">
+		<img class="box four" src="https://i.pinimg.com/originals/98/c1/5b/98c15bf7d49d48c91a31b5561caa3367.png">
+		<p class="special cleared">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatibus consectetur a, obcaecati voluptate necessitatibus illum sapiente repellendus maiores totam, tempore dolorum consequatur repudiandae accusantium magnam maxime ducimus culpa cum tenetur qui nisi! Reprehenderit recusandae aspernatur nemo, numquam consectetur, asperiores velit sequi sint tenetur, laudantium amet autem voluptatum illum praesentium.</p>
+	</section>
+</body>
+</html>
